@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int rec(int n)
+{
+if(n==0)
+{
+return n;1
+}
+else
+return (n%10+rec(n/10)) ;
+}
+int main()
+{
+int n;
+scanf("%d",&n);
+printf("%d",rec(n));
+    return 0;
+}
